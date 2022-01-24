@@ -54,28 +54,127 @@ html, body {
     font-size: 64px;
 }
 
-.navigation {
-    float: right;
-    height: 100%;
+
+@media (min-width:1500px){
+    .toggled-nav {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+    .toggled-nav li {
+        background-color: #313131;
+        padding: 15px;
+        display: flex;
+        border-radius: 16px;
+    }
+
+    .navigation {
+        float: right;
+        height: 100%;
+    }
+
+    .navigation a {
+        height: 0%;
+        float: left;
+        padding: 0px 10px;
+        display: table;
+    }
+
+    .navigation a:last-child {
+        padding-right: 1;
+    }
+
+
+    .navigation a li {
+        display: table-cell;
+        vertical-align: middle;
+        height: 100%;
+    }
+
+    .navigation li {
+        background-color: #313131;
+        padding: 15px;
+        display: flex;
+        border-radius: 16px;
+    }
+
+    .navigation li:hover {
+        background-color: #414141;
+    }
+
+    #hampurilaisia {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+        
+    }
 }
 
-.navigation a {
-    height: 0%;
-    float: left;
-    padding: 0px 10px;
-    display: table;
+@media (max-width:1500px) {
+    #hampurilaisia {
+        visibility: visible;
+        float: right;
+    }
+
+    .toggled-nav {
+        visibility: hidden;
+        margin: 0%;
+    }
+
+    .navigation {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+
+
+    .toggleCls{
+        visibility: visible;
+    }
+
+    .toggled-nav li {
+        background-color: #696969;
+        padding: 15px;
+        display: flex;
+        border-radius: 16px;
+    }
+
+    .toggled-nav li:hover {
+        background-color: #414141;
+    }
+
+    .toggled-nav {
+        float: right;
+        height: 100%;
+    }
+
+    .toggled-nav a {
+        height: 0%;
+        padding: 10px 0px;
+        display: table;
+    }
+
+
+    .toggled-nav a li {
+        display: table-cell;
+        vertical-align: middle;
+        height: 100%;
+    }
+
+    .toggled-nav a li {
+        background-color: #696969;
+        padding: 15px;
+        display: flex;
+        border-radius: 16px;
+    }
+
+    .toggled-nav li:hover {
+        background-color: #414141;
+    }
+
 }
 
-.navigation a:last-child {
-    padding-right: 1;
-}
 
-
-.navigation a li {
-    display: table-cell;
-    vertical-align: middle;
-    height: 100%;
-}
 
 .container {
     min-height: 100%;
@@ -117,22 +216,13 @@ html, body {
 
 }
 
-.navButton {
-    background-color: #313131;
-    padding: 15px;
-    display: flex;
-    border-radius: 16px;
-}
 
-.navButton:hover {
-    background-color: #414141;
-}
 
-.navigation a:link, .navigation a:visited, .navigation a:hover, .navigation a:active {
+.navigation a:link, .navigation a:visited, .navigation a:hover, .navigation a:active, .toggled-nav a:link, .toggled-nav a:visited, .toggled-nav a:hover, .toggled-nav a:active {
     color: white;
     text-decoration: none;
     font-family: 'Dongle', sans-serif;
-    font-size: 48px;
+    font-size: 32px;
 }
 
 .text {
