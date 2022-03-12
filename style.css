@@ -54,7 +54,12 @@ html, body {
     font-size: 64px;
 }
 
+.navigation {
+    float: right;
+    height: 100%;
+}
 
+<<<<<<< HEAD
 @media (min-width:1500px){
     .toggled-nav {
         visibility: hidden;
@@ -197,10 +202,25 @@ html, body {
     .toggled-nav li:hover {
         background-color: #414141;
     }
+=======
+.navigation a {
+    height: 0%;
+    float: left;
+    padding: 0px 10px;
+    display: table;
+}
+>>>>>>> parent of 0c0e6fe (Added mobile support)
 
+.navigation a:last-child {
+    padding-right: 1;
 }
 
 
+.navigation a li {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+}
 
 .container {
     min-height: 100%;
@@ -242,13 +262,22 @@ html, body {
 
 }
 
+.navButton {
+    background-color: #313131;
+    padding: 15px;
+    display: flex;
+    border-radius: 16px;
+}
 
+.navButton:hover {
+    background-color: #414141;
+}
 
-.navigation a:link, .navigation a:visited, .navigation a:hover, .navigation a:active, .toggled-nav a:link, .toggled-nav a:visited, .toggled-nav a:hover, .toggled-nav a:active {
+.navigation a:link, .navigation a:visited, .navigation a:hover, .navigation a:active {
     color: white;
     text-decoration: none;
     font-family: 'Dongle', sans-serif;
-    font-size: 32px;
+    font-size: 48px;
 }
 
 .text {
